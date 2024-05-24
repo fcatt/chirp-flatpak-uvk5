@@ -49,8 +49,8 @@ modules:
       - --disable-glcanvasegl
     sources:
       - type: archive
-        url: https://github.com/wxWidgets/wxWidgets/releases/download/v3.2.3/wxWidgets-3.2.3.tar.bz2
-        sha256: c170ab67c7e167387162276aea84e055ee58424486404bba692c401730d1a67a
+        url: https://github.com/wxWidgets/wxWidgets/releases/download/v3.2.5/wxWidgets-3.2.5.tar.bz2
+        sha256: 0ad86a3ad3e2e519b6a705248fc9226e3a09bbf069c6c692a02acf7c2d1c6b51
         x-checker-data:
           type: html
           url: https://wxwidgets.org/downloads
@@ -65,11 +65,11 @@ modules:
   - name: chirp-build
     buildsystem: simple
     build-commands:
-      - pip3 install --prefix=/app --no-deps chirp-20231031-py3-none-any.whl 
+      - pip3 install --prefix=/app --no-deps chirp-20240522-py3-none-any.whl
     sources:
       - type: file
-        url: https://trac.chirp.danplanet.com/chirp_next/next-20231031/chirp-20231031-py3-none-any.whl
-        sha256: ae84fe7494102a031e72f660ae1a45b315cb2ef2755f7d4e751a278e15a113fa
+        url: https://archive.chirpmyradio.com/chirp_next/next-20240522/chirp-20240522-py3-none-any.whl
+        sha256: a89f69041ac22ed56fc961a3382e689eb9bdde5ab5b24b55f03d620a826b939a
   - name: metadata
     buildsystem: simple
     build-commands:

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component type="desktop-application">
   <id>com.danplanet.chirp.chirp_next</id>
-
+  
   <name>CHIRP-next</name>
   <url type="homepage">https://trac.chirp.danplanet.com/</url>
   <summary>CHIRP is a free, open-source tool for programming your radio.</summary>
@@ -32,5 +32,17 @@
   <branding>
 	<color type="primary">#628db6</color>
   </branding>
+
+   <releases>
+    <release type="stable" version="20240522+2.6.0" date="2024-05-24T00:00:00Z">
+      <description>
+        <p>Initial release</p>
+        <ul>
+          <li>CHIRP-next 20240522</li>
+          <li>uvk5_egzumer_f4hwn_ver_2_6_0.py</li>
+        </ul>
+      </description>
+    </release>
+  </releases>
 
 </component>
