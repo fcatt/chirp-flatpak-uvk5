@@ -29,8 +29,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/OpenMathLib/OpenBLAS
-        tag: v0.3.24
-        commit: 9f815cf1bf16b4e64d4aee681b33558fc090b62a
+        tag: v0.3.27
+        commit: ce3f668c992cb3cc80849d5c30ed637f5adbd5b2
         x-checker-data:
           type: git
           tag-pattern: ^(v[\d\.]+)$
@@ -39,7 +39,8 @@ modules:
     buildsystem: simple
     build-commands:
       - pip3 install --verbose --exists-action=i --no-index --find-links="file://${PWD}"
-        --prefix=${FLATPAK_DEST} attrdict3 packaging pyproject_metadata --no-build-isolation
+        --prefix=${FLATPAK_DEST} attrdict3 meson_python packaging pyproject_metadata
+        --no-build-isolation
     cleanup:
       - /lib
     sources:
@@ -51,15 +52,22 @@ modules:
           packagetype: bdist_wheel
           name: attrdict3
       - type: file
-        url: https://files.pythonhosted.org/packages/ec/1a/610693ac4ee14fcdf2d9bf3c493370e4f2ef7ae2e19217d7a237ff42367d/packaging-23.2-py3-none-any.whl
-        sha256: 8c491190033a9af7e1d931d0b5dacc2ef47509b34dd0de67ed209b5203fc88c7
+        url: https://files.pythonhosted.org/packages/91/c0/104cb6244c83fe6bc3886f144cc433db0c0c78efac5dc00e409a5a08c87d/meson_python-0.16.0-py3-none-any.whl
+        sha256: 842dc9f5dc29e55fc769ff1b6fe328412fe6c870220fc321060a1d2d395e69e8
+        x-checker-data:
+          type: pypi
+          packagetype: bdist_wheel
+          name: meson-python
+      - type: file
+        url: https://files.pythonhosted.org/packages/49/df/1fceb2f8900f8639e278b056416d49134fb8d84c5942ffaa01ad34782422/packaging-24.0-py3-none-any.whl
+        sha256: 2ddfb553fdf02fb784c234c7ba6ccc288296ceabec964ad2eae3777778130bc5
         x-checker-data:
           name: packaging
           packagetype: bdist_wheel
           type: pypi
       - type: file
-        url: https://files.pythonhosted.org/packages/c4/cb/4678dfd70cd2f2d8969e571cdc1bb1e9293c698f8d1cf428fadcf48d6e9f/pyproject_metadata-0.7.1-py3-none-any.whl
-        sha256: 28691fbb36266a819ec56c9fa1ecaf36f879d6944dfde5411e87fc4ff793aa60
+        url: https://files.pythonhosted.org/packages/aa/5f/bb5970d3d04173b46c9037109f7f05fc8904ff5be073ee49bb6ff00301bc/pyproject_metadata-0.8.0-py3-none-any.whl
+        sha256: ad858d448e1d3a1fb408ac5bac9ea7743e7a8bbb472f2693aaa334d2db42f526
         x-checker-data:
           name: pyproject-metadata
           packagetype: bdist_wheel
@@ -72,8 +80,8 @@ modules:
         --prefix=${FLATPAK_DEST} numpy --no-build-isolation
     sources:
       - type: file
-        url: https://files.pythonhosted.org/packages/78/23/f78fd8311e0f710fe1d065d50b92ce0057fe877b8ed7fd41b28ad6865bfc/numpy-1.26.1.tar.gz
-        sha256: c8c6c72d4a9f831f328efb1312642a1cafafaa88981d9ab76368d50d07d93cbe
+        url: https://files.pythonhosted.org/packages/65/6e/09db70a523a96d25e115e71cc56a6f9031e7b8cd166c1ac8438307c14058/numpy-1.26.4.tar.gz
+        sha256: 2a02aba9ed12e4ac4eb3ea9421c420301a0c6460d9830d74a9df87efa4912010
         x-checker-data:
           type: pypi
           name: numpy
@@ -90,8 +98,8 @@ modules:
       - /bin
     sources:
       - type: file
-        url: https://files.pythonhosted.org/packages/80/d7/c4b258c9098b469c4a4e77b0a99b5f4fd21e359c2e486c977d231f52fc71/Pillow-10.1.0.tar.gz
-        sha256: e6bf8de6c36ed96c86ea3b6e1d5273c53f46ef518a062464cd7ef5dd2cf92e38
+        url: https://files.pythonhosted.org/packages/ef/43/c50c17c5f7d438e836c169e343695534c38c77f60e7c90389bd77981bc21/pillow-10.3.0.tar.gz
+        sha256: 9d2455fbf44c914840c793e89aa82d0e1763a14253a000743719ae5946814b2d
         x-checker-data:
           type: pypi
           name: Pillow
@@ -99,6 +107,6 @@ modules:
         url: https://files.pythonhosted.org/packages/aa/64/d749e767a8ce7bdc3d533334e03bb1106fc4e4803d16f931fada9007ee13/wxPython-4.2.1.tar.gz
         sha256: e48de211a6606bf072ec3fa778771d6b746c00b7f4b970eb58728ddf56d13d5c
         x-checker-data:
+          is-important: true
           type: pypi
           name: wxPython
-
