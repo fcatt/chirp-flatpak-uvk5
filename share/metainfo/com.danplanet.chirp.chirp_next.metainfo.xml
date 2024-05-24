@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component type="desktop-application">
   <id>com.danplanet.chirp.chirp_next</id>
-  
+
   <name>CHIRP-next</name>
   <url type="homepage">https://trac.chirp.danplanet.com/</url>
   <summary>CHIRP is a free, open-source tool for programming your radio.</summary>
@@ -11,17 +11,17 @@
 
   <description>
     <p>
-      CHIRP is a FREE cross-platform, cross-radio programming tool. It works on Windows MacOS, and Linux. It supports a growing list of radios across several manufacturers and allows transferring of memory contents between them.
+      CHIRP is a free, open-source tool for programming your radio. It supports a large number of manufacturers and models, as well as provides a way to interface with multiple data sources and formats.
     </p>
     <p>
-      This Flatpak is packaged by reesericci, not the maintainers of CHIRP
+      This Flatpak is packaged by François (chach.org &amp; github.com/fcatt), not the maintainers of CHIRP.
     </p>
   </description>
   
   <launchable type="desktop-id">com.danplanet.chirp.chirp_next.desktop</launchable>
   <screenshots>
     <screenshot type="default">
-      <image>https://trac.chirp.danplanet.com/.site/screenshot1.png</image>
+      <image>https://archive.chirpmyradio.com/.site/screenshot-next.png</image>
     </screenshot>
   </screenshots>
 
