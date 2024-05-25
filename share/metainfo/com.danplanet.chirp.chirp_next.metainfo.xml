@@ -43,6 +43,15 @@
         </ul>
       </description>
     </release>
+    <release type="stable" version="20240524+2.6.0" date="2024-05-25T19:30:00Z">
+      <description>
+        <p>chirp-20240524</p>
+        <ul>
+          <li>CHIRP-next 20240524</li>
+          <li>uvk5_egzumer_f4hwn_ver_2_6_0.py</li>
+        </ul>
+      </description>
+    </release>
   </releases>
 
 </component>
