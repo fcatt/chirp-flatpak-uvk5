@@ -65,11 +65,11 @@ modules:
   - name: chirp-build
     buildsystem: simple
     build-commands:
-      - pip3 install --prefix=/app --no-deps chirp-20240606-py3-none-any.whl
+      - pip3 install --prefix=/app --no-deps chirp-20240614-py3-none-any.whl
     sources:
       - type: file
-        url: https://archive.chirpmyradio.com/chirp_next/next-20240606/chirp-20240606-py3-none-any.whl
-        sha256: b8a05853c79bc1f6d4ced307b888e6a763bb7e261d8b2f2e9e1ead66dacb3bd8
+        url: https://archive.chirpmyradio.com/chirp_next/next-20240614/chirp-20240614-py3-none-any.whl
+        sha256: ddad09574181d37c5d1452822621724b30d2c7010e18034d2977e049f60086b6
   - name: metadata
     buildsystem: simple
     build-commands:

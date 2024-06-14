@@ -61,11 +61,11 @@
         </ul>
       </description>
     </release>
-    <release type="stable" version="20240606+2.6.0" date="2024-06-07T05:20:00Z">
+    <release type="stable" version="20240614+2.6.0" date="2024-06-14T17:50:00Z">
       <description>
-        <p>chirp-20240606</p>
+        <p>chirp-20240614</p>
         <ul>
-          <li>CHIRP-next 20240606</li>
+          <li>CHIRP-next 20240614</li>
           <li>uvk5_egzumer_f4hwn_ver_2_6_0.py</li>
         </ul>
       </description>
