@@ -65,7 +65,7 @@ modules:
   - name: chirp-build
     buildsystem: simple
     build-commands:
-      - pip3 install --prefix=/app --no-deps chirp-20240618-py3-none-any.whl
+      - pip3 install --prefix=/app --no-deps chirp-20240626-py3-none-any.whl
     sources:
       - type: file
         url: https://archive.chirpmyradio.com/chirp_next/next-20240626/chirp-20240626-py3-none-any.whl
