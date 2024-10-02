@@ -27,6 +27,15 @@
 	<color type="primary">#628db6</color>
   </branding>
   <releases>
+    <release type="stable" version="20240926+3.3.0" date="2024-10-02T06:00:00Z">
+      <description>
+        <p>CHIRP-next 20240926</p>
+        <ul>
+          <li>CHIRP-next 20240926</li>
+          <li>uvk5_egzumer_f4hwn_ver_3_3_0.py</li>
+        </ul>
+      </description>
+    </release>
     <release type="stable" version="20240905+3.3.0" date="2024-09-10T16:00:00Z">
       <description>
         <p>CHIRP-next 20240905</p>
