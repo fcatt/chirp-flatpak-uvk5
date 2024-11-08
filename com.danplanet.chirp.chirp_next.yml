@@ -65,11 +65,11 @@ modules:
   - name: chirp-build
     buildsystem: simple
     build-commands:
-      - pip3 install --prefix=/app --no-deps chirp-20241020-py3-none-any.whl
+      - pip3 install --prefix=/app --no-deps chirp-20241108-py3-none-any.whl
     sources:
       - type: file
-        url: https://archive.chirpmyradio.com/chirp_next/next-20241020/chirp-20241020-py3-none-any.whl
-        sha256: 37717d84ea1ce60c9580c1fea31d0bc2721e40e6c292b0c50c43ec852531fbc4
+        url: https://archive.chirpmyradio.com/chirp_next/next-20241108/chirp-20241108-py3-none-any.whl
+        sha256: 151b6ae4cde55d3c54865d77fdb3b48472088dba88d93041977a654dd8b4259c
   - name: metadata
     buildsystem: simple
     build-commands:
@@ -80,11 +80,11 @@ modules:
   - name: uvk5_egzumer_f4hwn
     buildsystem: simple
     build-commands:
-      - cp uvk5_egzumer_f4hwn_ver_3_5_2.py /app/lib/python3.11/site-packages/chirp/drivers/
+      - cp uvk5_egzumer_f4hwn_ver_3_6_1.py /app/lib/python3.11/site-packages/chirp/drivers/
     sources:
       - type: file
-        url: https://raw.githubusercontent.com/armel/uv-k5-chirp-driver/main/uvk5_egzumer_f4hwn_ver_3_5_2.py
-        sha256: 4c6d895b3da437d03125194ab7f22686837c2af943611a6bf74ba50445cbc3ac
+        url: https://raw.githubusercontent.com/armel/uv-k5-chirp-driver/main/uvk5_egzumer_f4hwn_ver_3_6_1.py
+        sha256: 446a27b5e7b582437baa9a051a61b03ca575ec811b07c59dc2977ddff823ac01
 
 finish-args:
   - --device=all
