@@ -80,11 +80,11 @@ modules:
   - name: uvk5_egzumer_f4hwn
     buildsystem: simple
     build-commands:
-      - cp uvk5_egzumer_f4hwn_ver_3_7_0.py /app/lib/python3.11/site-packages/chirp/drivers/
+      - cp uvk5_egzumer_f4hwn_ver_3_7_1.py /app/lib/python3.11/site-packages/chirp/drivers/
     sources:
       - type: file
-        url: https://github.com/armel/uv-k5-chirp-driver/releases/download/3.7.0/uvk5_egzumer_f4hwn_ver_3_7_0.py
-        sha256: e9f84b3e02569cb6d6706904901d4795b11b9705d7866a98c97fff5b8d3e9806
+        url: https://github.com/armel/uv-k5-chirp-driver/releases/download/3.7.1/uvk5_egzumer_f4hwn_ver_3_7_1.py
+        sha256: 3dfa24063df7644affb47db832f560fc43cf05eaf931487253c3cb9a4c36669f
 
 finish-args:
   - --device=all
